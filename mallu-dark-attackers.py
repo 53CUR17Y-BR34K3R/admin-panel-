@@ -12,7 +12,7 @@ def Space(j):
 
 
 def findAdmin():
-	f = open("link.txt","r");
+	f = open("malludarkattackers.txt","r");
 	link = raw_input("Enter Site Name \n(ex : example.com or www.example.com ): ")
 	print "\n\nAvilable links : \n"
 	while True:
@@ -28,14 +28,11 @@ def findAdmin():
 		except URLError as e:
 			continue
 		else:
-			print "OK => ",req_link
-
+			print "Admin Panel Founded => ",req_link
+ 
 def Credit():
-	Space(9); print(G + "#####################################")
-	Space(9); print "#   +++ Admin Panel Finder v1 +++   #"
-	Space(9); print "#     Script by 1RF4N               #"
-	Space(9); print "#    MALLU DARK ATTACKERS           #"
-	Space(9); print "#####################################"
-
+	Space(9); print(G +  'Admin Panel Finder v1')
+	Space(9); print(R +    'Script by 1RF4N')
+	Space(9); print       MALLU DARK ATTACKERS
 Credit()
 findAdmin()
