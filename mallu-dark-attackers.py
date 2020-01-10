@@ -34,6 +34,6 @@ def Credit():
 print(G + '
 	Space(9); print"      Admin Panel Finder "
 	Space(9); print"        Script by 1RF4N "
-	Space(9); print"      MALLU DARK ATTACKERS"'
+	Space(9); print"      MALLU DARK ATTACKERS'"
 Credit()
 findAdmin()
