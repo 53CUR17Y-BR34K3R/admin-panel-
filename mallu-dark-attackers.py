@@ -33,6 +33,6 @@ def findAdmin():
 def Credit():
 	Space(9); print(G +  'Admin Panel Finder v1')
 	Space(9); print(R +    'Script by 1RF4N')
-	Space(9); print       MALLU DARK ATTACKERS)
+	Space(9); print       MALLU DARK ATTACKERS))
 Credit()
 findAdmin()
