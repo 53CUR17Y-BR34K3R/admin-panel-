@@ -1,4 +1,4 @@
-<p align="center"><img src="https://d.top4top.io/p_1470hqvqv0.png" size="100" height="50"></p>
+<p align="center"><img src="https://d.top4top.io/p_1470hqvqv0.png" size="800" height="350"></p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-2-brightgreen.svg?style=plastic">
