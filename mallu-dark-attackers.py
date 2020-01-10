@@ -31,7 +31,7 @@ def findAdmin():
 			print "Admin Panel Founded => ",req_link
  
 def Credit():
-	Space(9); print"(G +   Admin Panel Finder "
+	Space(9); print(G +"   Admin Panel Finder "
 	Space(9); print"        Script by 1RF4N "
 	Space(9); print"      MALLU DARK ATTACKERS)"
 Credit()
