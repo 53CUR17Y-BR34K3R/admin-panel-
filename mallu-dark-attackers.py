@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-
+R = '\033[31m' # red
+G = '\033[32m' # green
 from urllib2 import Request, urlopen, URLError, HTTPError
 
 def Space(j):
@@ -30,7 +31,7 @@ def findAdmin():
 			print "OK => ",req_link
 
 def Credit():
-	Space(9); print "#####################################"
+	Space(9); print(G + "#####################################")
 	Space(9); print "#   +++ Admin Panel Finder v1 +++   #"
 	Space(9); print "#     Script by 1RF4N               #"
 	Space(9); print "#    MALLU DARK ATTACKERS           #"
