@@ -6,9 +6,10 @@
 ### Installation
 
 ```pkg install git
- pkg install python2
+ pkg install python
  git clone https://github.com/1RF4/admin-panel-.git
- cd admin-panel- 
- python2 mallu-dark-attackers.py
+ cd admin-panel-
+ pip install requirements.txt 
+ python mallu-dark-attackers.py
 
 ```
