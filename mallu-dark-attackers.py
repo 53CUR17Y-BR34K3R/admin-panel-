@@ -1,39 +1,40 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-R = '\033[31m' # red
-G = '\033[32m' # green
-from urllib2 import Request, urlopen, URLError, HTTPError
-
-def Space(j):
-	i = 0
-	while i<=j:
-		print " ",
-		i+=1
 
 
-def findAdmin():
-	f = open("malludarkattackers.txt","r");
-	link = raw_input("Enter Site Name \n(ex : example.com or www.example.com & don't use http or https protocol ): ")
-	print "\n\nAvilable links : \n"
-	while True:
-		sub_link = f.readline()
-		if not sub_link:
-			break
-		req_link = "http://"+link+"/"+sub_link
-		req = Request(req_link)
-		try:
-			response = urlopen(req)
-		except HTTPError as e:
-			continue
-		except URLError as e:
-			continue
-		else:
-			print "Admin Panel Founded => ",req_link
+import urllib.request
+R = "\033[1;31;40m" # red
+G = "\033[1;32;40m" # green
+Y = "\033[1;33;40m" # yellow
+B = "\033[1;34;40m" # blue
+intro = """
+
+           _____    ______ _           _           
+     /\   |  __ \  |  ____(_)         | |          
+    /  \  | |__) | | |__   _ _ __   __| | ___ _ __ 
+   / /\ \ |  ___/  |  __| | | '_ \ / _` |/ _ \ '__|
+  / ____ \| |      | |    | | | | | (_| |  __/ |   
+ /_/    \_\_|      |_|    |_|_| |_|\__,_|\___|_|   
  
-def Credit():
+############ By IRF4 ############
+"""
+print(Y + intro)
         
-	Space(9); print  (G +    'Admin Panel Finder')
-	Space(9); print"  Script by 1RF4N "
-	Space(9); print"MALLU DARK ATTACKERS"
-Credit()
-findAdmin()
+with open("malludarkattackers.txt",'r') as f:
+    link = input("[+] enter site name without http/s: ")
+    print(B + "[+] Checking..! \n")
+    count = 0
+    for links in f:    
+        sub_link = f.readline()
+        if sub_link is not None:
+            req_link = "http://" + link + "/" + sub_link
+            try:  
+               urllib.request.urlopen(req_link)
+               print(G + f"[*] Admin panel is: {req_link}")
+            except:
+                pass
+            print(f"\033[1;36;40m Processing {count} of 293", end="\r")
+            count += 1
+        else:
+            print(R + "[!] Something went wrong with wordlist... ")
+    print("[!] Finished Exiting... ")
