@@ -33,7 +33,7 @@ with open("malludarkattackers.txt",'r') as f:
                print(G + f"[*] Admin panel is: {req_link}")
             except:
                 pass
-            print(f"\033[1;36;40m Processing {count} of 293", end="\r")
+            print(f"\033[1;36;40m Processing {count} of 670", end="\r")
             count += 1
         else:
             print(R + "[!] Something went wrong with wordlist... ")
