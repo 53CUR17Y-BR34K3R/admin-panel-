@@ -40,4 +40,4 @@ with open("malludarkattackers.txt",'r') as f:
             count += 1
         else:
             print(R + "[!] Something went wrong with wordlist... ")
-    print("[!] All Done For More Information Open 53CUR17Y-BR34K3R.php ")
+            print("[!] Finished Exiting... ")
